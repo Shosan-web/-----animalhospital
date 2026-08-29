@@ -409,3 +409,17 @@ img {
         line-height: calc(30 / 16);
     }
 }
+
+/* ------------information------------ */
+.information {
+    padding: 6.3rem 3rem 6.8rem;
+    background: var(--background-color-secondary);
+}
+@media (max-width: 767px) {
+    .information {
+        padding: 4.3rem 2rem 5rem;
+    }
+}
+.information-list {
+    padding-top: 4.6rem;
+}
