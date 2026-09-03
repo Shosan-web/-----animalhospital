@@ -101,16 +101,25 @@ img {
     align-items: center;
 }
 .header__logo {
-    height: 5rem;
+    height: 5rem;    /* 不要？？ */
     display: flex;
     align-items: center;
     gap: 0.951rem;
+    transition: opacity 0.4s;
+}
+@media (any-hover: hover) {
+    .header__logo:hover {
+        opacity: 0.7;
+    }
 }
 .header__logo img {
     width: 2.549rem;
     height: 2.49rem;
 }
 .header__logo a {
+    height: 5rem;
+    display: flex;
+    align-items: center;
     font-size: 1.8rem;
     font-weight: var(--font-w-bol);
 }
@@ -129,6 +138,12 @@ img {
     height: 5rem;
     font-size: 1.4rem;
     font-weight: var(--font-w-bol);
+    transition: opacity 0.4s;
+}
+@media (any-hover: hover) {
+    .header__nav li a:hover {
+        opacity: 0.7;
+    }
 }
 
 /* ------------fv------------ */
@@ -439,6 +454,12 @@ img {
     grid-template-columns: 11.1rem 18rem 1fr;
     border-bottom: 1px solid rgba(112, 112, 112, 1);
     align-items: center;
+    transition: opacity 0.4s;
+}
+@media (any-hover: hover) {
+    .information-item:hover {
+        opacity: 0.5;
+    }
 }
 @media (max-width: 767px) {
     .information-item {
@@ -563,6 +584,12 @@ img {
 .mail {
     margin-top: 0.7rem;
     font-size: 1.8rem;
+    transition: opacity 0.4s;
+}
+@media (any-hover: hover) {
+    .mail:hover {
+        opacity: 0.7;
+    }
 }
 @media (max-width: 767px) {
     .mail {
@@ -689,9 +716,17 @@ textarea {
     height: 5rem;
     font-size: 2.5rem;
     font-weight: var(--font-w-bol);
-    color: #fff;
+    color: var(--background-color-primary);
     background: var(--font-color-highlight);
     border-radius: 1rem;
+    border: 1px solid var(--font-color-highlight);
+    transition: background-color 0.4s, color 0.4s;
+}
+@media (any-hover: hover) {
+    .button:hover {
+        background: var(--background-color-primary);
+        color: var(--font-color-highlight);
+    }
 }
 @media (max-width: 767px) {
     .button {
@@ -731,11 +766,20 @@ textarea {
     justify-content: center;
     flex-wrap: wrap;
     gap: 1.4rem;
+    transition: opacity 0.4s;
 }
 @media (max-width: 767px) {
     .footer__nav ul {
         column-gap: 2rem;
         row-gap: 0;
+    }
+}
+.footer__nav ul li {
+    transition: opacity 0.4s;
+}
+@media (any-hover: hover) {
+    .footer__nav ul li:hover {
+        opacity: 0.7;
     }
 }
 .footer__nav ul li a {
@@ -771,5 +815,13 @@ textarea {
 @media (max-width: 767px) {
     .header__sns {
         margin-top: 3.1rem;
+    }
+}
+.header__sns li {
+    transition: opacity 0.4s;
+}
+@media (any-hover: hover) {
+    .header__sns li:hover {
+        opacity: 0.7;
     }
 }
