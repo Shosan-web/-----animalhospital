@@ -57,7 +57,7 @@ img {
     display: block;
 }
 .inner {
-    max-width: 880px;
+    max-width: 88rem;
     margin-inline: auto;
 }
 .section-title {
@@ -180,10 +180,11 @@ img {
         padding-left: calc(20 / 375 * 100vw);
     }
 }
-.fv__catch h2 {/* 多分ここのサイズについてフィードバックあると思う */
+.fv__catch h2 {
     position: relative;
     padding-block: 2rem 2.3rem;
     padding-left: calc(99 / 1080 * 100vw);
+    width: calc(393 / 880 * 100vw);
     font-size: calc(25 / 1080 * 100vw);
     font-weight: var(--font-w-bol);
 }
@@ -191,6 +192,7 @@ img {
     .fv__catch h2 {
         padding-block: 1.5rem 1.4rem;
         padding-left: calc(20 / 375 * 100vw);
+        width: calc(290 / 375 * 100vw);
         font-size: calc(20 / 375 * 100vw);
     }
 }
@@ -222,13 +224,13 @@ img {
 .greeting__title h2 {
     font-size: 3rem;
     font-weight: var(--font-w-bol);
-    line-height:calc(50 / 30);
+    line-height: calc(50 / 30);
     color: var(--font-color-highlight);
 }
 @media (max-width: 767px) {
     .greeting__title h2 {
         font-size: 2.5rem;
-        line-height:calc(35 / 25);
+        line-height: calc(35 / 25);
     }
     .greeting__title h2 span {
         display: inline-block;
@@ -309,7 +311,7 @@ img {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    column-gap: 4.5rem;
+    column-gap: calc(45 / 880 * 100%);
     row-gap: 5rem;
 }
 @media (max-width: 767px) {
@@ -458,6 +460,7 @@ img {
 }
 @media (any-hover: hover) {
     .information-item:hover {
+        cursor: pointer;
         opacity: 0.5;
     }
 }
@@ -517,7 +520,7 @@ img {
 .access__content {
     padding-top: 4.6rem;
     display: flex;
-    gap: 4.6rem;
+    gap: calc(46 / 880 *100%);
 }
 @media (max-width: 767px) {
     .access__content {
@@ -531,7 +534,8 @@ img {
 }
 @media (max-width: 767px) {
     .access__map {
-        aspect-ratio: 335 / 222; /* 多分ここのサイズについてフィードバックあると思う */
+        aspect-ratio: 335 / 222;
+        max-width: 100%;
     }
 }
 .access__map iframe {
@@ -581,8 +585,14 @@ img {
     color: var(--font-color-highlight);
     line-height: calc(40 / 25);
 }
+@media (min-width: 768px) {
+    .tel a[href^="tel:"]{
+        pointer-events: none;
+    } 
+}
 .mail {
-    margin-top: 0.7rem;
+    margin-top: 0.6rem;
+    display: block;
     font-size: 1.8rem;
     transition: opacity 0.4s;
 }
@@ -598,9 +608,9 @@ img {
     }
 }
 .access-info-clinic__time {
-    margin-top: 2.2rem;
+    margin-top: 2.3rem;
     margin-left: 0.4rem;
-    padding-block: 1.5rem 1.4rem;
+    padding-block: 1.6rem 1.2rem;
     width: 100%;
     font-size: 1.8rem;
     line-height: calc(40 / 18);
@@ -625,11 +635,10 @@ img {
 @media (max-width: 767px) {
     .contact {
         padding: 4.3rem 2rem 5rem;
-        background: var(--background-color-secondary);
     }
 }
 .contact .inner p {
-    margin-top: 2.5rem;
+    margin-top: 2.5rem; 
     text-align: center;
 }
 @media (max-width: 767px) {
@@ -705,7 +714,9 @@ input[type="email"] {
     }
 }
 textarea {
+    resize: none;
     height: 30rem;
+    word-break: break-all;
 }
 .contact__form-button {
     text-align: center;
