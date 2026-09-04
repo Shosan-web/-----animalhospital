@@ -180,7 +180,7 @@ img {
         padding-left: calc(20 / 375 * 100vw);
     }
 }
-.fv__catch h2 {
+.fv__catch h2 {/* 多分ここのサイズについてフィードバックあると思う */
     position: relative;
     padding-block: 2rem 2.3rem;
     padding-left: calc(99 / 1080 * 100vw);
