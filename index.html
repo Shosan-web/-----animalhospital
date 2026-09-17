@@ -17,7 +17,6 @@
     <meta property="og:description" content="滑石きたむら動物病院の公式サイトです">
     <meta property="og:site_name" content="滑石きたむら動物病院">
     <meta property="og:locale" content="ja-JP">
-    <meta prefix="og: https://ogp.me/ns#">
     <meta name="twitter:card" content="Summary Card">
     <meta name="twitter:site" content="@shosan260801">
 </head>
@@ -25,10 +24,19 @@
     <div id="container">
         <header class="header">
             <div class="inner">
-                <h1 class="header__logo">
-                    <img src="./images/logo_1.svg" alt="logo_1">
-                    <a href="#index.html">滑石きたむら動物病院</a>
-                </h1>
+                <div class="header__logo">
+                    <h1>
+                        <a href="#">
+                            <span class="header__logo-image">
+                                <img src="./images/logo_1.svg" alt="logo_1">
+                            </span>
+                            <span class="header__logo-text">
+                                <span>滑石きたむら動物病院</span>
+                            </span>
+                        </a>
+                    </h1>
+                </div>
+
                 <nav>
                     <ul class="header__nav pc">
                         <li><a href="#greeting">ご挨拶</a></li>
@@ -68,10 +76,12 @@
                 <div class="greeting__contents">
                     <p>
                         当院は地域に密着し、皆さまの大切な家族の一員である動物たちの<span class="pc-ib-span">ホームドクターを目指しています。</span><br>
-                        緊急時だけではなく、日常のちょっとした不安や違和感などお気軽にご相談ください。<br>
+                        緊急時だけではなく、日常のちょっとした不安や違和感など<span class="pc-ib-span">お気軽にご相談ください。</span><br>
                         動物たちが健康で幸せな生活を送ることができるようサポートいたします。
                     </p>
-                    <img src="./images/logo_2.svg" alt="logo_2">
+                    <div class="greeting__logo">
+                        <img src="./images/logo_2.svg" alt="logo_2">
+                    </div>
                 </div>
             </div>
          </section>
@@ -79,9 +89,13 @@
          <section id="about" class="about">
             <div class="inner">
                 <div class="about__title section-title">
-                    <img src="./images/logo_1.svg" alt="logo_1">
+                    <div class="section-icon">
+                        <img src="./images/logo_1.svg" alt="logo_1">
+                    </div>
                     <h2>強み</h2>
-                    <img src="./images/logo_1.svg" alt="logo_1">
+                    <div class="section-icon">
+                        <img src="./images/logo_1.svg" alt="logo_1">
+                    </div>
                 </div>
                 <div class="about__contents">
                     <div class="about__items">
@@ -97,7 +111,7 @@
                                 </picture>
                             </div>
                         </div>
-                        <div class="about__item about-item"><!-- about-item--reverse -->
+                        <div class="about__item about-item">
                             <div class="about-item__textarea">
                                 <h3>エキゾチックアニマルも<span class="sp-ib-span">対応します</span></h3>
                                 <p>犬・猫だけではなく、ウサギやハムスター、爬虫類や両生類、鳥類などエキゾチックアニマルも対応しております。</p>
@@ -130,9 +144,13 @@
          <section id="service" class="service">
             <div class="inner">
                 <div class="service__title section-title">
-                    <img src="./images/logo_1.svg" alt="logo_1">
+                    <div class="section-icon">
+                        <img src="./images/logo_1.svg" alt="logo_1">
+                    </div>
                     <h2>サービス</h2>
-                    <img src="./images/logo_1.svg" alt="logo_1">
+                    <div class="section-icon">
+                        <img src="./images/logo_1.svg" alt="logo_1">
+                    </div>
                 </div>
                 <div class="service__contents">
                     <div class="service__items">
@@ -181,42 +199,46 @@
          <section id="information" class="information">
             <div class="inner">
                 <div class="information__title section-title">
-                    <img src="./images/logo_1.svg" alt="logo_1">
+                    <div class="section-icon">
+                        <img src="./images/logo_1.svg" alt="logo_1">
+                    </div>
                     <h2>お知らせ</h2>
-                    <img src="./images/logo_1.svg" alt="logo_1">
+                    <div class="section-icon">
+                        <img src="./images/logo_1.svg" alt="logo_1">
+                    </div>
                 </div>
                 <div class="information-items">
                     <article>
                         <a href="#" class="information-item">
-                            <time class="information-item__date" datetime="0000-00-00">0000.00.00</time>
+                            <time class="information-item__date" datetime="2026-09-14">0000.00.00</time>
                             <h3 class="information-item__title">去勢手術の助成金</h3>
                             <p class="information-item__text">長崎県より犬猫去勢手術の助成金制度が導入されました。</p>
                         </a>
                     </article>
                     <article>
                         <a href="#" class="information-item">
-                            <time class="information-item__date" datetime="0000-00-00">0000.00.00</time>
+                            <time class="information-item__date" datetime="2026-09-14">0000.00.00</time>
                             <h3 class="information-item__title">往診の範囲が拡大</h3>
                             <p class="information-item__text">往診の範囲を長崎市内から長崎県内まで拡大しました。</p>
                         </a>
                     </article>
                     <article>
                         <a href="#" class="information-item">
-                            <time class="information-item__date" datetime="0000-00-00">0000.00.00</time>
+                            <time class="information-item__date" datetime="2026-09-14">0000.00.00</time>
                             <h3 class="information-item__title">新年のご挨拶</h3>
                             <p class="information-item__text">謹賀新年。今年もよろしくお願いいたします。</p>
                         </a>
                     </article>
                     <article>
                         <a href="#" class="information-item">
-                            <time class="information-item__date" datetime="0000-00-00">0000.00.00</time>
+                            <time class="information-item__date" datetime="2026-09-14">0000.00.00</time>
                             <h3 class="information-item__title">年末年始の診療</h3>
                             <p class="information-item__text">当院では年末年始も24時間休まず診療しております。</p>
                         </a>
                     </article>
                     <article>
                         <a href="#" class="information-item">
-                            <time class="information-item__date" datetime="0000-00-00">0000.00.00</time>
+                            <time class="information-item__date" datetime="2026-09-14">0000.00.00</time>
                             <h3 class="information-item__title">開院11周年</h3>
                             <p class="information-item__text">開院11周年を迎えることとなりました。</p>
                         </a>
@@ -229,29 +251,42 @@
          <section id="access" class="access">
             <div class="inner">
                 <div class="access__title section-title">
-                    <img src="./images/logo_1.svg" alt="logo_1">
+                    <div class="section-icon">
+                        <img src="./images/logo_1.svg" alt="logo_1">
+                    </div>
                     <h2>アクセス</h2>
-                    <img src="./images/logo_1.svg" alt="logo_1">
+                    <div class="section-icon">
+                        <img src="./images/logo_1.svg" alt="logo_1">
+                    </div>
                 </div>
                 <div class="access__contents">
-                    <div class="access__map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4674.638080076353!2d129.84188999260616!3d32.80957214860241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sja!2sjp!4v1784262323256!5m2!1sja!2sjp" width="440" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                    <div class="access__map access-map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4674.638080076353!2d129.84188999260616!3d32.80957214860241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sja!2sjp!4v1784262323256!5m2!1sja!2sjp" width="440" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
                     </div>
-                    <div class="access__info">
+                    <div class="access__info access-info">
                         <h3>滑石きたむら動物病院</h3>
-                        <address>〒852-8065<span class="sp-ib-span">　長崎県長崎市横尾○丁目○-○</span></address>
-                        <div class="tel">
-                            <span>電話：</span>
-                            <a href="tel:000-0000-0000">
-                                000-0000-0000
-                            </a>
-                        </div>
-                        <a href="mailto:info@example.com" class="mail">メール：info@example.com</a>
-                        <hr>
-                        <p class="access-info-clinic__time">
-                            診療時間：24時間365日<br>
-                            休診日：なし
-                        </p>
+                        <address>
+                            <p class="access-info__address">〒852-8065　<span class="ib-span">長崎県長崎市横尾○丁目○-○</span></p>
+                            <div class="tel">
+                                <span>電話：</span>
+                                <a href="tel:000-0000-0000">
+                                    000-0000-0000
+                                </a>
+                            </div>
+                            <div class="mail">
+                                <p>
+                                    メール：
+                                    <a href="mailto:info@example.com">
+                                        info@example.com
+                                    </a>
+                                </p>
+                            </div>
+                            <hr>
+                            <p class="access-info-clinic__time">
+                                診療時間：24時間365日<br>
+                                休診日：なし
+                            </p>
+                        </address>
                     </div>
                 </div>
             </div>
@@ -261,9 +296,13 @@
          <section id="contact" class="contact">
             <div class="inner">
                 <div class="contact__title section-title">
-                    <img src="./images/logo_1.svg" alt="logo_1">
+                    <div class="section-icon">
+                        <img src="./images/logo_1.svg" alt="logo_1">
+                    </div>
                     <h2>お問い合わせ</h2>
-                    <img src="./images/logo_1.svg" alt="logo_1">
+                    <div class="section-icon">
+                        <img src="./images/logo_1.svg" alt="logo_1">
+                    </div>
                 </div>
                 <p>
                    ご予約やご質問などお気軽にお問い合わせください。<br>
@@ -295,9 +334,9 @@
                         </dd>
                     </dl>
                     
-                    <dl class="contact__form-button">
+                    <div class="contact__form-button">
                         <input type="submit" class="button" value="送 信">
-                    </dl>
+                    </div>
                 </form>
             </div>
          </section>
@@ -319,24 +358,32 @@
             <p>&copy;Copyright0000　<span class="ib-span">滑石きたむら動物病院</span></p>
             <ul class="footer__sns">
                 <li>
-                    <a href="#">
-                        <img src="./images/icon_twitter.svg" alt="x">
-                    </a>
+                    <div class="x">
+                        <a href="#">
+                            <img src="./images/icon_twitter.svg" alt="x">
+                        </a>
+                    </div>
                 </li>
                 <li>
-                    <a href="#">
-                        <img src="./images/icon_facebook.svg" alt="facebook">
-                    </a>
+                    <div class="facebook">
+                        <a href="#">
+                            <img src="./images/icon_facebook.svg" alt="facebook">
+                        </a>
+                    </div>
                 </li>
                 <li>
-                    <a href="#">
-                        <img src="./images/icon_youtube.svg" alt="youtube">
-                    </a>
+                    <div class="youtube">
+                        <a href="#">
+                            <img src="./images/icon_youtube.svg" alt="youtube">
+                        </a>
+                    </div>
                 </li>
                 <li>
-                    <a href="#">
-                        <img src="./images/icon_instagram.svg" alt="instagram">
-                    </a>
+                    <div class="instagram">
+                        <a href="#">
+                            <img src="./images/icon_instagram.svg" alt="instagram">
+                        </a>
+                    </div>
                 </li>
             </ul>
         </div>
